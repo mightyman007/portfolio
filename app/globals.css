@@ -1,0 +1,109 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --background: #09090b;
+  --surface: #101013;
+  --surface-2: #16161a;
+  --border: #232329;
+  --foreground: #e4e4e7;
+  --muted: #9d9da8;
+  --accent: #4ade80;
+  --accent-strong: #22c55e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "JetBrains Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 25%, transparent);
+  color: var(--foreground);
+}
+
+/* subtle scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* faint blueprint grid used behind the hero */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgb(74 222 128 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(74 222 128 / 0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, black 40%, transparent 100%);
+}
+
+/* blinking block cursor for the terminal */
+@keyframes caret-blink {
+  0%, 45% { opacity: 1; }
+  50%, 95% { opacity: 0; }
+}
+.caret {
+  animation: caret-blink 1.1s steps(1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .caret {
+    animation: none;
+  }
+}
+
+/* ---- code blocks (rehype-pretty-code + shiki) ---- */
+[data-rehype-pretty-code-figure] {
+  margin-block: 1.5rem;
+}
+[data-rehype-pretty-code-figure] pre {
+  overflow-x: auto;
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  background-color: #0c0c0f !important; /* sits under the shiki theme */
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+[data-rehype-pretty-code-figure] code {
+  display: grid;
+}
+[data-rehype-pretty-code-figure] [data-line] {
+  padding-inline: 0.75rem;
+  margin-inline: -0.75rem;
+  border-left: 2px solid transparent;
+}
+[data-rehype-pretty-code-figure] [data-highlighted-line] {
+  background: rgb(74 222 128 / 0.07);
+  border-left-color: var(--accent);
+}

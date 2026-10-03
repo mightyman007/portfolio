@@ -1,0 +1,78 @@
+---
+title: "Building this portfolio for $0 with Next.js and Vercel"
+description: "The architecture behind this site: static-first Next.js on Vercel's free tier, a rate-limited contact API with Upstash and Resend, and why it can never generate a bill."
+date: "2026-10-02"
+tags: ["nextjs", "vercel", "architecture", "free-tier"]
+---
+
+Every personal site needs a home. Mine is this one — and it costs exactly
+nothing to run. Here's the architecture, and the reasoning behind each choice.
+
+## The stack
+
+| Layer | Choice | Free tier |
+|---|---|---|
+| Framework | Next.js (App Router) + TypeScript + Tailwind | open source |
+| Hosting | Vercel Hobby | 100 GB bandwidth / month |
+| Contact email | Resend | 3,000 emails / month |
+| Rate limiting | Upstash Redis | 500K commands / month |
+| Blog | MDX files in the repo | no database needed |
+
+## Static-first, on purpose
+
+The trick to surviving on free tiers is making sure a page view costs almost
+nothing. Every page on this site — home, projects, blog posts — is
+**statically generated** at build time and served from Vercel's edge CDN. A
+visitor is served a pre-built HTML file; no functions run, no databases get
+touched.
+
+The only thing that runs server-side is the contact form:
+
+```
+POST /api/contact → validate → rate-limit → Resend → my inbox
+```
+
+That's one serverless function for the entire site.
+
+## GitHub data without the rate-limit pain
+
+The projects page pulls live stats (stars, language, last push) from the GitHub
+API — but it does so **at build time**, not in your browser. The page
+revalidates once a day, so GitHub sees a couple of requests per day from me,
+not one per visitor from you.
+
+## The safety net
+
+My one hard requirement: **this site must never cost me money.** Three things
+guarantee that:
+
+1. Vercel's Hobby plan physically cannot charge you — when you hit a limit,
+   the affected resource pauses until the cycle resets. Worst case, the site
+   goes quiet for a few days. No surprise invoice is possible.
+2. The pages are static, so ordinary traffic only consumes bandwidth — and
+   100 GB/month is a *lot* of portfolio visits.
+3. The contact API is rate-limited (5 submissions/hour per IP via
+   [Upstash](https://upstash.com)), so a bot can't burn the email quota:
+
+```ts
+const limiter = new Ratelimit({
+  redis: Redis.fromEnv(),
+  limiter: Ratelimit.slidingWindow(5, "1 h"),
+  prefix: "rl:contact",
+});
+
+const result = await limiter.limit(ip);
+if (!result.success) {
+  return Response.json({ ok: false }, { status: 429 });
+}
+```
+
+There's also a honeypot field — an input hidden from humans that bots love to
+fill in. If it arrives with a value, the API returns a fake success and drops
+the message.
+
+## What's next
+
+A custom domain eventually, an OG image generator for nicer link previews, and
+whatever project ends up on this site next — since the best thing a portfolio
+can show is the fact that it keeps growing.
