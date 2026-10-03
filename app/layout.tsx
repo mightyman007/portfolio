@@ -29,12 +29,21 @@ export const metadata: Metadata = {
     url: site.url,
     siteName: site.name,
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: `${site.name} sitting on a mossy fallen oak in a Bay Area forest`,
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: `${site.name} — ${site.role}`,
     description: site.description,
     creator: "@John_P_Coding",
+    images: ["/images/og-image.jpg"],
   },
 };
 

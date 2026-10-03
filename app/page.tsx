@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Mail, MapPin } from "lucide-react";
 import { TerminalHero } from "@/components/terminal-hero";
@@ -16,8 +17,22 @@ export default async function HomePage() {
   return (
     <div>
       {/* hero */}
-      <section className="bg-grid border-b border-border">
-        <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-24">
+      <section className="relative overflow-hidden border-b border-border">
+        {/* forest photo, served responsive-optimized; original untouched */}
+        <Image
+          src="/images/hero-bg.webp"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[38%_center]"
+        />
+        {/* dark gradient keeps text readable over the bright sky */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background"
+        />
+        <div className="relative mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-24">
           <p className="mb-4 font-mono text-sm text-muted">
             <span className="text-accent">~/</span> {site.name} · {site.role}
           </p>
