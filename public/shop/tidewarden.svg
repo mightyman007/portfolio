@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1712 1080" role="img" aria-label="Tidewarden — original trading-card-style sticker of a sea-turtle guardian">
+  <defs>
+    <linearGradient id="holo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8a8a"/>
+      <stop offset="0.25" stop-color="#ffd479"/>
+      <stop offset="0.5" stop-color="#8affc1"/>
+      <stop offset="0.75" stop-color="#7ab8ff"/>
+      <stop offset="1" stop-color="#d78aff"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="0.5" cy="0.42" r="0.95">
+      <stop offset="0" stop-color="#0c1f24"/>
+      <stop offset="1" stop-color="#0a1016"/>
+    </radialGradient>
+    <linearGradient id="art" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f2d38"/>
+      <stop offset="1" stop-color="#0c1420"/>
+    </linearGradient>
+  </defs>
+
+  <!-- card body -->
+  <rect x="14" y="14" width="1684" height="1052" rx="86" fill="#0d0b14" stroke="url(#holo)" stroke-width="12"/>
+  <rect x="44" y="44" width="1624" height="992" rx="64" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="3"/>
+  <path d="M-80 760 L760 -80 L940 -80 L-80 940 Z" fill="url(#holo)" opacity="0.05"/>
+
+  <!-- top bar -->
+  <text x="76" y="140" font-family="ui-sans-serif, system-ui, sans-serif" font-size="78" font-weight="800" letter-spacing="6" fill="#f3ede2">TIDEWARDEN</text>
+  <text x="1636" y="140" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif" font-size="72" font-weight="800" fill="#f3ede2">90<tspan font-size="40" fill="#9d9da8" dx="8">HP</tspan></text>
+
+  <!-- art window -->
+  <rect x="64" y="184" width="1584" height="588" rx="36" fill="url(#art)" stroke="url(#holo)" stroke-opacity="0.4" stroke-width="6"/>
+  <circle cx="856" cy="480" r="255" fill="#2dd4bf" opacity="0.09"/>
+
+  <!-- bubbles -->
+  <g stroke="#7dd3fc" fill="none" stroke-width="5">
+    <circle cx="1200" cy="382" r="17"/>
+    <circle cx="1245" cy="318" r="11"/>
+    <circle cx="1165" cy="300" r="7"/>
+  </g>
+
+  <!-- kelp -->
+  <path d="M800 330 q34 -70 2 -130 q-22 -46 12 -88" stroke="#22c55e" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M880 342 q28 -56 0 -104" stroke="#16a34a" stroke-width="14" fill="none" stroke-linecap="round"/>
+
+  <!-- flippers -->
+  <ellipse cx="672" cy="600" rx="54" ry="34" fill="#2dd4bf" transform="rotate(-25 672 600)"/>
+  <ellipse cx="850" cy="706" rx="60" ry="30" fill="#2dd4bf" transform="rotate(8 850 706)"/>
+
+  <!-- shell -->
+  <circle cx="840" cy="520" r="182" fill="#14b8a6"/>
+  <circle cx="840" cy="520" r="182" fill="none" stroke="#0f766e" stroke-width="16"/>
+  <circle cx="840" cy="520" r="58" fill="#0d9488" stroke="#0f766e" stroke-width="5"/>
+  <circle cx="940" cy="520" r="40" fill="#0d9488" stroke="#0f766e" stroke-width="4"/>
+  <circle cx="890" cy="606" r="40" fill="#0d9488" stroke="#0f766e" stroke-width="4"/>
+  <circle cx="790" cy="606" r="40" fill="#0d9488" stroke="#0f766e" stroke-width="4"/>
+  <circle cx="740" cy="520" r="40" fill="#0d9488" stroke="#0f766e" stroke-width="4"/>
+  <circle cx="790" cy="434" r="40" fill="#0d9488" stroke="#0f766e" stroke-width="4"/>
+  <circle cx="890" cy="434" r="40" fill="#0d9488" stroke="#0f766e" stroke-width="4"/>
+  <circle cx="840" cy="438" r="10" fill="#ccfbf1" opacity="0.8"/>
+  <circle cx="768" cy="548" r="10" fill="#ccfbf1" opacity="0.8"/>
+  <circle cx="915" cy="470" r="10" fill="#ccfbf1" opacity="0.8"/>
+
+  <!-- head -->
+  <circle cx="1085" cy="505" r="92" fill="#2dd4bf"/>
+  <circle cx="1105" cy="490" r="13" fill="#134e4a"/>
+  <circle cx="1110" cy="486" r="4" fill="#ffffff"/>
+  <path d="M1058 548 Q1084 566 1108 546" stroke="#134e4a" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+  <!-- stat bar -->
+  <line x1="64" y1="812" x2="1648" y2="812" stroke="#ffffff" stroke-opacity="0.08" stroke-width="3"/>
+  <g>
+    <circle cx="84" cy="872" r="15" fill="#2dd4bf"/>
+    <circle cx="128" cy="872" r="15" fill="#2dd4bf"/>
+    <text x="200" y="888" font-family="ui-sans-serif, system-ui, sans-serif" font-size="44" font-weight="600" fill="#e4e4e7">Shell Shake</text>
+    <text x="1648" y="888" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif" font-size="44" font-weight="700" fill="#f3ede2">30</text>
+  </g>
+  <g>
+    <circle cx="84" cy="956" r="15" fill="#2dd4bf"/>
+    <circle cx="128" cy="956" r="15" fill="#2dd4bf"/>
+    <circle cx="172" cy="956" r="15" fill="#2dd4bf"/>
+    <circle cx="216" cy="956" r="15" fill="#2dd4bf"/>
+    <text x="200" y="972" font-family="ui-sans-serif, system-ui, sans-serif" font-size="44" font-weight="600" fill="#e4e4e7">Tide Slam</text>
+    <text x="1648" y="972" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif" font-size="44" font-weight="700" fill="#f3ede2">70</text>
+  </g>
+
+  <!-- microtext -->
+  <text x="76" y="1040" font-family="ui-monospace, monospace" font-size="24" letter-spacing="2" fill="#9d9da8" opacity="0.55">CR80 · ORIGINAL SERIES · 85.6×54MM</text>
+  <text x="1636" y="1040" text-anchor="end" font-family="ui-monospace, monospace" font-size="24" letter-spacing="2" fill="#9d9da8" opacity="0.55">1ST PRINT</text>
+</svg>

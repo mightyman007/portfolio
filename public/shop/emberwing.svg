@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1712 1080" role="img" aria-label="Emberwing — original trading-card-style sticker of a small fire drake">
+  <defs>
+    <linearGradient id="holo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8a8a"/>
+      <stop offset="0.25" stop-color="#ffd479"/>
+      <stop offset="0.5" stop-color="#8affc1"/>
+      <stop offset="0.75" stop-color="#7ab8ff"/>
+      <stop offset="1" stop-color="#d78aff"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="0.5" cy="0.42" r="0.95">
+      <stop offset="0" stop-color="#2a1210"/>
+      <stop offset="1" stop-color="#0d0a12"/>
+    </radialGradient>
+    <linearGradient id="art" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b1523"/>
+      <stop offset="1" stop-color="#160b18"/>
+    </linearGradient>
+  </defs>
+
+  <!-- card body -->
+  <rect x="14" y="14" width="1684" height="1052" rx="86" fill="#0d0b14" stroke="url(#holo)" stroke-width="12"/>
+  <rect x="44" y="44" width="1624" height="992" rx="64" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="3"/>
+  <path d="M-80 760 L760 -80 L940 -80 L-80 940 Z" fill="url(#holo)" opacity="0.05"/>
+
+  <!-- top bar -->
+  <text x="76" y="140" font-family="ui-sans-serif, system-ui, sans-serif" font-size="78" font-weight="800" letter-spacing="6" fill="#f3ede2">EMBERWING</text>
+  <text x="1636" y="140" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif" font-size="72" font-weight="800" fill="#f3ede2">60<tspan font-size="40" fill="#9d9da8" dx="8">HP</tspan></text>
+
+  <!-- art window -->
+  <rect x="64" y="184" width="1584" height="588" rx="36" fill="url(#art)" stroke="url(#holo)" stroke-opacity="0.4" stroke-width="6"/>
+  <circle cx="856" cy="480" r="255" fill="#f97316" opacity="0.09"/>
+
+  <!-- sparks -->
+  <g stroke="#fbbf24" stroke-width="6" stroke-linecap="round" opacity="0.8">
+    <path d="M700 250 h22 M711 239 v22"/>
+    <path d="M1085 232 h18 M1094 223 v18"/>
+    <path d="M1180 468 h16 M1188 460 v16"/>
+    <path d="M556 556 h16 M564 548 v16"/>
+  </g>
+
+  <!-- wings -->
+  <path d="M640 470 Q470 420 430 260 Q560 300 640 390 Z" fill="#ea580c"/>
+  <path d="M640 452 Q520 410 480 290 Q580 330 648 402 Z" fill="#fb923c" opacity="0.8"/>
+  <path d="M1072 470 Q1242 420 1282 260 Q1152 300 1072 390 Z" fill="#ea580c"/>
+  <path d="M1072 452 Q1192 410 1232 290 Q1132 330 1064 402 Z" fill="#fb923c" opacity="0.8"/>
+
+  <!-- tail + flame -->
+  <path d="M985 640 Q1080 690 1140 630" stroke="#f97316" stroke-width="34" fill="none" stroke-linecap="round"/>
+  <path d="M1140 630 Q1220 640 1235 585 Q1245 620 1265 600 Q1258 665 1195 675 Q1150 678 1140 630 Z" fill="#fb923c"/>
+  <path d="M1160 640 Q1195 645 1205 620 Q1200 640 1178 648 Z" fill="#fef08a"/>
+
+  <!-- body -->
+  <ellipse cx="856" cy="520" rx="172" ry="148" fill="#f97316"/>
+  <ellipse cx="856" cy="565" rx="108" ry="86" fill="#fed7aa"/>
+  <circle cx="856" cy="368" r="128" fill="#f97316"/>
+  <path d="M762 268 L736 196 L806 242 Z" fill="#c2410c"/>
+  <path d="M950 268 L976 196 L906 242 Z" fill="#c2410c"/>
+
+  <!-- face -->
+  <circle cx="810" cy="358" r="26" fill="#ffffff"/>
+  <circle cx="902" cy="358" r="26" fill="#ffffff"/>
+  <circle cx="814" cy="362" r="12" fill="#1c1917"/>
+  <circle cx="906" cy="362" r="12" fill="#1c1917"/>
+  <circle cx="818" cy="352" r="5" fill="#ffffff"/>
+  <circle cx="910" cy="352" r="5" fill="#ffffff"/>
+  <circle cx="840" cy="402" r="4" fill="#1c1917" opacity="0.6"/>
+  <circle cx="872" cy="402" r="4" fill="#1c1917" opacity="0.6"/>
+  <path d="M806 428 Q856 468 906 428" stroke="#1c1917" stroke-width="10" fill="none" stroke-linecap="round"/>
+
+  <!-- stat bar -->
+  <line x1="64" y1="812" x2="1648" y2="812" stroke="#ffffff" stroke-opacity="0.08" stroke-width="3"/>
+  <g>
+    <circle cx="84" cy="872" r="15" fill="#f87171"/>
+    <circle cx="128" cy="872" r="15" fill="#f87171"/>
+    <text x="200" y="888" font-family="ui-sans-serif, system-ui, sans-serif" font-size="44" font-weight="600" fill="#e4e4e7">Cinder Nip</text>
+    <text x="1648" y="888" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif" font-size="44" font-weight="700" fill="#f3ede2">30</text>
+  </g>
+  <g>
+    <circle cx="84" cy="956" r="15" fill="#f87171"/>
+    <text x="200" y="972" font-family="ui-sans-serif, system-ui, sans-serif" font-size="44" font-weight="600" fill="#e4e4e7">Wing Slap</text>
+    <text x="1648" y="972" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif" font-size="44" font-weight="700" fill="#f3ede2">10</text>
+  </g>
+  <circle cx="1210" cy="956" r="15" fill="none" stroke="#3f3f46" stroke-width="5"/>
+  <circle cx="1254" cy="956" r="15" fill="none" stroke="#3f3f46" stroke-width="5"/>
+
+  <!-- microtext -->
+  <text x="76" y="1040" font-family="ui-monospace, monospace" font-size="24" letter-spacing="2" fill="#9d9da8" opacity="0.55">CR80 · ORIGINAL SERIES · 85.6×54MM</text>
+  <text x="1636" y="1040" text-anchor="end" font-family="ui-monospace, monospace" font-size="24" letter-spacing="2" fill="#9d9da8" opacity="0.55">1ST PRINT</text>
+</svg>

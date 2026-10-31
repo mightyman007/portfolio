@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1712 1080" role="img" aria-label="Voltkit — original trading-card-style sticker of a small electric fox">
+  <defs>
+    <linearGradient id="holo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8a8a"/>
+      <stop offset="0.25" stop-color="#ffd479"/>
+      <stop offset="0.5" stop-color="#8affc1"/>
+      <stop offset="0.75" stop-color="#7ab8ff"/>
+      <stop offset="1" stop-color="#d78aff"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="0.5" cy="0.42" r="0.95">
+      <stop offset="0" stop-color="#241f0c"/>
+      <stop offset="1" stop-color="#0d0a12"/>
+    </radialGradient>
+    <linearGradient id="art" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33290f"/>
+      <stop offset="1" stop-color="#170f18"/>
+    </linearGradient>
+  </defs>
+
+  <!-- card body -->
+  <rect x="14" y="14" width="1684" height="1052" rx="86" fill="#0d0b14" stroke="url(#holo)" stroke-width="12"/>
+  <rect x="44" y="44" width="1624" height="992" rx="64" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="3"/>
+  <path d="M-80 760 L760 -80 L940 -80 L-80 940 Z" fill="url(#holo)" opacity="0.05"/>
+
+  <!-- top bar -->
+  <text x="76" y="140" font-family="ui-sans-serif, system-ui, sans-serif" font-size="78" font-weight="800" letter-spacing="6" fill="#f3ede2">VOLTKIT</text>
+  <text x="1636" y="140" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif" font-size="72" font-weight="800" fill="#f3ede2">50<tspan font-size="40" fill="#9d9da8" dx="8">HP</tspan></text>
+
+  <!-- art window -->
+  <rect x="64" y="184" width="1584" height="588" rx="36" fill="url(#art)" stroke="url(#holo)" stroke-opacity="0.4" stroke-width="6"/>
+  <circle cx="856" cy="480" r="255" fill="#facc15" opacity="0.09"/>
+
+  <!-- static sparks -->
+  <g stroke="#fef08a" stroke-width="6" stroke-linecap="round" opacity="0.85">
+    <path d="M640 300 h20 M650 290 v20"/>
+    <path d="M1120 250 h22 M1131 239 v22"/>
+    <path d="M1240 540 h16 M1248 532 v16"/>
+    <path d="M540 520 h16 M548 512 v16"/>
+  </g>
+
+  <!-- zigzag tail -->
+  <path d="M990 640 L1105 555 L1040 552 L1165 455 L1100 452 L1230 345" stroke="#facc15" stroke-width="30" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1218 322 L1272 300 L1248 352 Z" fill="#fef08a"/>
+
+  <!-- ears -->
+  <path d="M745 292 L688 150 L818 246 Z" fill="#fde047"/>
+  <path d="M712 240 L688 150 L756 210 Z" fill="#1c1917"/>
+  <path d="M967 292 L1024 150 L894 246 Z" fill="#fde047"/>
+  <path d="M1000 240 L1024 150 L956 210 Z" fill="#1c1917"/>
+
+  <!-- head + body -->
+  <circle cx="856" cy="372" r="136" fill="#fde047"/>
+  <path d="M756 660 Q750 480 856 476 Q962 480 956 660 Q956 706 856 706 Q756 706 756 660 Z" fill="#fde047"/>
+  <ellipse cx="856" cy="608" rx="64" ry="74" fill="#fefce8"/>
+
+  <!-- face -->
+  <circle cx="808" cy="366" r="24" fill="#1c1917"/>
+  <circle cx="904" cy="366" r="24" fill="#1c1917"/>
+  <circle cx="814" cy="358" r="5" fill="#ffffff"/>
+  <circle cx="910" cy="358" r="5" fill="#ffffff"/>
+  <ellipse cx="764" cy="424" rx="26" ry="13" fill="#fb7185" opacity="0.35"/>
+  <ellipse cx="948" cy="424" rx="26" ry="13" fill="#fb7185" opacity="0.35"/>
+  <circle cx="856" cy="410" r="8" fill="#1c1917"/>
+  <path d="M834 430 Q845 444 856 432 Q867 444 878 430" stroke="#1c1917" stroke-width="9" fill="none" stroke-linecap="round"/>
+
+  <!-- stat bar -->
+  <line x1="64" y1="812" x2="1648" y2="812" stroke="#ffffff" stroke-opacity="0.08" stroke-width="3"/>
+  <g>
+    <circle cx="84" cy="872" r="15" fill="#facc15"/>
+    <text x="200" y="888" font-family="ui-sans-serif, system-ui, sans-serif" font-size="44" font-weight="600" fill="#e4e4e7">Static Nuzzle</text>
+    <text x="1648" y="888" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif" font-size="44" font-weight="700" fill="#f3ede2">20</text>
+  </g>
+  <g>
+    <circle cx="84" cy="956" r="15" fill="#facc15"/>
+    <circle cx="128" cy="956" r="15" fill="#facc15"/>
+    <circle cx="172" cy="956" r="15" fill="#facc15"/>
+    <text x="200" y="972" font-family="ui-sans-serif, system-ui, sans-serif" font-size="44" font-weight="600" fill="#e4e4e7">Zoomies</text>
+    <text x="1648" y="972" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif" font-size="44" font-weight="700" fill="#f3ede2">40</text>
+  </g>
+
+  <!-- microtext -->
+  <text x="76" y="1040" font-family="ui-monospace, monospace" font-size="24" letter-spacing="2" fill="#9d9da8" opacity="0.55">CR80 · ORIGINAL SERIES · 85.6×54MM</text>
+  <text x="1636" y="1040" text-anchor="end" font-family="ui-monospace, monospace" font-size="24" letter-spacing="2" fill="#9d9da8" opacity="0.55">1ST PRINT</text>
+</svg>
