@@ -11,6 +11,11 @@
  *  - demoUrl:  optional live demo / deployed link.
  *  - note:     optional short footnote (e.g. "learning project").
  */
+
+// Owner: Netlify assigns the site URL on first deploy. If the auto-generated
+// URL differs from this one after connecting the repo, update it here.
+const COURSE_URL = "https://subagents-course.netlify.app";
+
 export type Project = {
   title: string;
   slug: string;
@@ -35,6 +40,16 @@ export const projects: Project[] = [
     featured: true,
     demoUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://mightyman007.vercel.app",
     note: "the site you're looking at",
+  },
+  {
+    title: "Subagents Mastery",
+    slug: "subagents-mastery",
+    repo: "mightyman007/subagents-course",
+    description:
+      "Interactive course I built on using AI subagents for programming — quizzes, exam, flashcards, agent templates.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "MDX", "Vitest"],
+    year: "2026",
+    demoUrl: COURSE_URL,
   },
   {
     title: "codewars",
